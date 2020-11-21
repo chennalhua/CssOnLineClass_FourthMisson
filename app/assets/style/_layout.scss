@@ -1,0 +1,59 @@
+
+body{
+    font-family: 'Noto Sans';
+    line-height: 1.5;
+}
+/*-------------Layout-------------*/
+
+/*----- header -----*/
+.header{
+    max-width: 100%;
+    padding:30px 88px;
+}
+.headerLogo{
+    width: 80px;
+    height: 49px;
+    /*圖片取代文字*/
+    text-indent:101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.headerLogo_img{
+    width: 80px;
+    height: 48.57px;
+}
+
+.headerMenuItem a:hover{
+    color:#AA0601;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 15%;
+
+}
+
+
+/*----- footer -----*/
+.footerPhoneNumberImg{
+    padding-right: 12px;
+}
+.footerPhoneLogo{
+    display:none;
+}
+.footerMenuBlock1Item a:hover{
+    border-bottom: cornflowerblue 3px solid;
+    padding-bottom: 5px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.footerPhoneNumber:hover{
+    color: cornflowerblue;
+}
+.footerEmailAddress:hover{
+    color: cornflowerblue;
+}
+.footerAnnouncementPrivacy a:hover{
+    color: cornflowerblue;
+}
+.footerAnnouncementTerms a:hover{
+    color: cornflowerblue;
+}
