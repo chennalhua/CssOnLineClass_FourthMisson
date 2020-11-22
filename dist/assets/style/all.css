@@ -55,59 +55,6 @@ a {
   text-decoration: none; }
 
 /*從這行以下開始*/
-body {
-  font-family: 'Noto Sans';
-  line-height: 1.5; }
-
-/*-------------Layout-------------*/
-/*----- header -----*/
-.header {
-  max-width: 100%;
-  padding: 30px 88px; }
-
-.headerLogo {
-  width: 80px;
-  height: 49px;
-  /*圖片取代文字*/
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap; }
-
-.headerLogo_img {
-  width: 80px;
-  height: 48.57px; }
-
-.headerMenuItem a:hover {
-  color: #AA0601;
-  font-weight: bold;
-  background-color: #fff;
-  border-radius: 15%; }
-
-/*----- footer -----*/
-.footerPhoneNumberImg {
-  padding-right: 12px; }
-
-.footerPhoneLogo {
-  display: none; }
-
-.footerMenuBlock1Item a:hover {
-  border-bottom: cornflowerblue 3px solid;
-  padding-bottom: 5px;
-  color: cornflowerblue;
-  font-weight: bold; }
-
-.footerPhoneNumber:hover {
-  color: cornflowerblue; }
-
-.footerEmailAddress:hover {
-  color: cornflowerblue; }
-
-.footerAnnouncementPrivacy a:hover {
-  color: cornflowerblue; }
-
-.footerAnnouncementTerms a:hover {
-  color: cornflowerblue; }
-
 /*--------   共用   --------*/
 .container {
   max-width: 1110px;
@@ -529,6 +476,181 @@ body {
     padding-left: 0;
     padding-right: 0; } }
 
+body {
+  font-family: 'Noto Sans';
+  line-height: 1.5; }
+
+/*-------------Layout-------------*/
+/*----- header -----*/
+.header {
+  max-width: 100%;
+  padding: 30px 88px; }
+
+.headerLogo {
+  width: 80px;
+  height: 49px;
+  /*圖片取代文字*/
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.headerLogo_img {
+  width: 80px;
+  height: 48.57px; }
+
+.headerMenuItem a:hover {
+  color: #AA0601;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 15%; }
+
+/*----- footer -----*/
+.footerPhoneNumberImg {
+  padding-right: 12px; }
+
+.footerPhoneLogo {
+  display: none; }
+
+.footerMenuBlock1Item a:hover {
+  border-bottom: cornflowerblue 3px solid;
+  padding-bottom: 5px;
+  color: cornflowerblue;
+  font-weight: bold; }
+
+.footerPhoneNumber:hover {
+  color: cornflowerblue; }
+
+.footerEmailAddress:hover {
+  color: cornflowerblue; }
+
+.footerAnnouncementPrivacy a:hover {
+  color: cornflowerblue; }
+
+.footerAnnouncementTerms a:hover {
+  color: cornflowerblue; }
+
+/*-------------------- RWD --------------------*/
+/*---- 992~768 Pad----*/
+@media (max-width: 992px) {
+  /*----- header -----*/
+  .header {
+    padding: 30px 39px; }
+  /*----- footer -----*/
+  .footerMenuBlock2 img {
+    width: 24px; }
+  .footerPhoneNumberImg {
+    width: 18px;
+    padding-right: 10px; }
+  .footerPhoneNumber {
+    font-size: 20px; }
+  .footerEmailAddressImg {
+    width: 28px; }
+  .footerEmailAddress {
+    font-size: 20px; }
+  .footerTrademarkLink {
+    display: none; }
+  .footerAnnouncementPrivacy {
+    margin-right: 24px; } }
+
+/*---- 767~415 Phone----*/
+@media (max-width: 767.9px) {
+  /*----- header -----*/
+  .header {
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .headerLogo {
+    width: 100%;
+    padding: 10px 0; }
+  .headerLogo_img {
+    margin: 0 auto;
+    height: auto;
+    width: 85px; }
+  .headerMenu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .headerMenuItem a {
+    display: block; }
+  .headerMenuItem a:hover {
+    border: none;
+    padding-bottom: 0;
+    color: cornflowerblue; }
+  .headerMenuItem {
+    padding: 8px 0;
+    width: 49.7%;
+    margin-right: 0;
+    border: 1px solid #ffffff; }
+  /*----- footer -----*/
+  .footerMenuBlock1 {
+    display: none; }
+  .footerMenu {
+    display: block; }
+  .footerBlockTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .footerTrademarkInformation {
+    font-size: 14px; }
+  .footerBlockBottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .footerAnnouncementInformation {
+    display: block; }
+  .footerPhoneLogo {
+    display: block;
+    width: 46px; } }
+
+/*---- 414~321 Phone----*/
+@media (max-width: 414.9px) {
+  /*----- header -----*/
+  .headerMenuItem {
+    width: 49.33%; }
+  /*----- footer -----*/
+  .footerBlockTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footerMenuBlock2 {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .footerMenuBlock2 img {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ffffff; }
+  .footerTrademarkInformation, .footerAnnouncementInformation a {
+    font-size: 20px;
+    text-align: center; }
+  .footerAnnouncementInformation {
+    margin: 0 auto; }
+  .footerAnnouncementInformation li {
+    text-align: center; }
+  .footerAnnouncementPrivacy {
+    margin-right: 0; }
+  .footerPhoneLogo {
+    display: none; }
+  .footerTrademark {
+    display: block; }
+  .footerTrademarkLink {
+    display: block;
+    text-align: center; } }
+
+/*---- 320 Phone----*/
 /*-------------Index-------------*/
 .banner {
   background: url("../images/banner.png") no-repeat center center;
@@ -1258,6 +1380,120 @@ body {
 .location2ContentBackup {
   width: 80%; }
 
+/*-------------------- RWD --------------------*/
+/*---- 992~768 Pad----*/
+@media (max-width: 992px) {
+  /*-------------Location-------------*/
+  .locationContent {
+    padding-bottom: 84px; }
+  .locationBannerHeaderIcon {
+    width: 30px;
+    height: 43px; }
+  .locationBannerHeaderWord {
+    font-size: 48px; }
+  .changeCityName {
+    font-size: 16px; }
+  .locationSelect {
+    font-size: 16px;
+    width: 237px; }
+  .locationContentList {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .locationContentItem {
+    width: 48%;
+    margin-left: 0%;
+    margin-right: 0%; }
+  .locationContentItem1 .locationContentItemImg, .locationContentItem2 .locationContentItemImg, .locationContentItem3 .locationContentItemImg, .locationContentItem4 .locationContentItemImg, .locationContentItem5 .locationContentItemImg {
+    height: 164px; }
+  /*--local2--*/
+  .locationContent2List {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .locationContent2Item {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 32px; }
+  .locationContent2List .locationContentItem1, .locationContentItem2Content {
+    width: 47%; }
+  .locationContentItem2Content {
+    font-size: 16px; }
+  .locationContent2List .locationContentItemTime, .locationContent2List .locationContentItemTel, .locationContent2List .locationContentItemAddress {
+    font-size: 14px; }
+  .locationContent2Item .locationContentItemImg {
+    height: 224px;
+    background: center center no-repeat url(../images/locate1.jpeg);
+    background-size: cover; }
+  .location2Map {
+    width: 100%;
+    height: 465px; }
+  .location2ContentBackup {
+    width: 80%; } }
+
+/*---- 767~415 Phone----*/
+@media (max-width: 767.9px) {
+  /*-------------Location-------------*/
+  .locationBanner {
+    height: 143px; }
+  .locationContent {
+    padding-bottom: 40px; }
+  .locationBannerHeaderIcon {
+    width: 17px;
+    height: 24px; }
+  .locationBannerHeaderWord {
+    font-size: 28px; }
+  .changeCityName {
+    font-size: 14px; }
+  .locationSelect {
+    font-size: 14px;
+    width: 288px;
+    height: 36px; }
+  .locationContentItem {
+    width: 100%;
+    margin-bottom: 16px; }
+  .locationContentItemName {
+    font-size: 16px; }
+  .locationContentItemTel, .locationContentItemTime, .locationContentItemAddress {
+    font-size: 14px; }
+  .locationContentItemButton {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+  /*--local2--*/
+  .locationContent2Item {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 32px; }
+  .locationContent2List .locationContentItem1, .locationContentItem2Content {
+    width: 100%; } }
+
+/*---- 414~321 Phone----*/
+/*---- 320 Phone----*/
+@media (max-width: 320.9px) {
+  /*-------------Local-------------*/
+  .locationContentList {
+    height: 905px;
+    overflow: hidden; }
+  .ChangePageMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
 /*-------------Product-------------*/
 .opticalLinkkImg {
   width: 48px; }
@@ -1388,5 +1624,120 @@ body {
 
 .productSunglassesContent .productChangePage {
   display: none; }
+
+/*-------------------- RWD --------------------*/
+/*---- 992~768 Pad----*/
+@media (max-width: 992px) {
+  /*-------------Product-------------*/
+  .opticalLinkkImg {
+    width: 32px; }
+  .sunglassesLinkImg {
+    width: 32px; }
+  .functionalLinkImg {
+    width: 23px; }
+  .opticalLink, .sunglassesLink, .functionalLink {
+    border-bottom: 8px solid transparent; }
+  .opticalLink:hover, .sunglassesLink:hover, .functionalLink:hover {
+    background-color: rgba(240, 222, 222, 0.966);
+    border-bottom: 8px solid #AA0601; }
+  .glassClassItemMain {
+    font-size: 28px; }
+  .productBanner div {
+    width: 50%;
+    height: 309px; }
+  .opticalLink, .sunglassesLink, .functionalLink {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+  .productOpticalContent {
+    padding-top: 40px;
+    padding-bottom: 104px; }
+  .productOpticalContentTiTle {
+    font-size: 32px;
+    margin-bottom: 32px; }
+  .productOpticalContentTiTle2 {
+    font-size: 24px; }
+  .productOpticalContentItem {
+    width: 48%;
+    margin-bottom: 72px; }
+  .productOpticalContentList {
+    margin-bottom: 33px; }
+  .productSunglassesContent .productChangePage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .productSunglassesContentItem {
+    width: 48%; }
+  .productSunglassesContentItemTittle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .productSunglassesContent {
+    padding-top: 40px;
+    padding-bottom: 104px; }
+  .productSunglassesContentTiTle {
+    font-size: 32px;
+    margin-bottom: 32px; }
+  .productSunglassesContentTiTle2 {
+    font-size: 24px; }
+  .productSunglassesContentItem {
+    width: 48%;
+    margin-bottom: 72px; }
+  .productSunglassesContentList {
+    margin-bottom: 33px; }
+  .Sunglasses_none {
+    display: block; } }
+
+/*---- 767~415 Phone----*/
+@media (max-width: 767.9px) {
+  /*-------------Product-------------*/
+  .glassClassItemMain {
+    font-size: 14px; }
+  .opticalLinkkImg {
+    width: 15px; }
+  .sunglassesLinkImg {
+    width: 14px; }
+  .functionalLinkImg {
+    width: 11px; }
+  .opticalLink, .sunglassesLink, .functionalLink {
+    border-bottom: 4px solid transparent; }
+  .opticalLink:hover, .sunglassesLink:hover, .functionalLink:hover {
+    border-bottom: 4px solid #AA0601; }
+  .productBanner div {
+    height: 144px; }
+  .opticalLink, .sunglassesLink, .functionalLink {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  .productOpticalContent, .productSunglassesContent {
+    padding-top: 30px;
+    padding-bottom: 56px; }
+  .productOpticalContentTiTle, .productSunglassesContentTiTle {
+    font-size: 20px;
+    margin-bottom: 16px; }
+  .productOpticalContentTiTle2, .productSunglassesContentTiTle2 {
+    font-size: 16px; }
+  .productOpticalContentItem, .productSunglassesContentItem {
+    width: 100%;
+    margin-bottom: 32px; }
+  .productOpticalContentList, .productSunglassesContentList {
+    height: 768px;
+    overflow: hidden;
+    margin-bottom: 8px; }
+  .productChangePage a {
+    font-size: 12px; } }
+
+/*---- 414~321 Phone----*/
+/*---- 320 Phone----*/
+@media (max-width: 320.9px) {
+  /*-------------product-------------*/
+  .glassClassItemMain {
+    font-size: 12px; }
+  .productChangePage {
+    width: 250px; } }
 
 /*# sourceMappingURL=all.css.map */
